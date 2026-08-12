@@ -1,7 +1,7 @@
 # Kiblat Project - Indonesian Idol Voting System
 
 ## 1. Project Overview
-A luxurious, elegant, and premium landing page for an Indonesian Idol-themed voting system. The application features a dark midnight & blue stage curtain ambient theme (`curtain-bg`), centered **Sembilan Belas Idol** emblem logo, header credit **"PRESENTED BY KARANG TARUNA RW 19"**, personalized hero subtext ("RW 19 Antapani Tengah"), contestant origins assigned to local neighborhood RTs (**RT 01** - **RT 05**), participant #1 profile assigned to **Reza** with custom image `Reza Foto.png` (`public/reza.png`), clean card layouts with zero view counts and zero top badges, simplified category filters (**Semua** and locked **Finalist 🔒**), and an **Ice Light Blue, Cyan & Metallic Silver** button color palette.
+A luxurious, elegant, and premium landing page for an Indonesian Idol-themed voting system. The application features a dark midnight & blue stage curtain ambient theme (`curtain-bg`), centered **Sembilan Belas Idol** emblem logo, header credit **"PRESENTED BY KARANG TARUNA RW 19"**, personalized hero subtext ("RW 19 Antapani Tengah"), contestant origins assigned to local neighborhood RTs (**RT 01** - **RT 05**), participant #1 profile assigned to **Reza** with custom image `Reza Foto.png` (`public/reza.png`), clean card layouts with zero view counts and zero top badges, simplified category filters (**Semua** and locked **Finalist 🔒**), and an **Ice Light Blue, Cyan & Metallic Silver** button color palette (with ExternalLink icon removed from VoteButton).
 
 ## 2. Tech Stack
 - **Framework:** Next.js 15 (App Router, TypeScript)
@@ -11,9 +11,10 @@ A luxurious, elegant, and premium landing page for an Indonesian Idol-themed vot
 - **Deployment:** Vercel (Repository: `meppani/19_Idol_Anteng`)
 
 ## 3. Current State
-- **Status:** 🚀 Reza Profile Updated, View Counts Removed, Pushed to GitHub (`meppani/19_Idol_Anteng`).
+- **Status:** 🚀 ExternalLink Icon Removed from VoteButton, Pushed to GitHub (`meppani/19_Idol_Anteng`).
 - **Completed Milestones:**
   - [x] Initialized Next.js project structure with TypeScript, Tailwind CSS, Framer Motion, and Lucide Icons.
+  - [x] Removed `ExternalLink` icon from `src/components/VoteButton.tsx`.
   - [x] Renamed participant #1 from "Salma Salsabil" to **"Reza"** in `src/data/participants.ts`.
   - [x] Updated participant #1 photo to **`Reza Foto.png`** (`public/reza.png`).
   - [x] Removed view count badges (`2.4M Views`, `1.9M Views`, etc.) from all participant cards in `ParticipantCard.tsx`.
@@ -48,8 +49,8 @@ A luxurious, elegant, and premium landing page for an Indonesian Idol-themed vot
     ├── components/
     │   ├── Navbar.tsx          # Header with SembilanBelas Idol logo, Karang Taruna RW 19 credit & ice blue VOTE button
     │   ├── Hero.tsx            # Stage Curtain Hero with neon blue glowing logo & ice cyan CTA buttons
-    │   ├── VoteButton.tsx      # Ice light blue / cyan / silver glowing CTA button
-    │   ├── ParticipantCard.tsx # Framer Motion hover cards with RT 01-05 origin & clean image layout (no view count badges)
+    │   ├── VoteButton.tsx      # Clean ice light blue / cyan / silver glowing CTA button (No ExternalLink icon)
+    │   ├── ParticipantCard.tsx # Framer Motion hover cards with RT 01-05 origin & clean image layout
     │   ├── ParticipantGrid.tsx # Category filter with Semua & Locked Finalist 🔒 tab + toast notification
     │   └── Footer.tsx          # Step-by-step voting guide & RW 19 Antapani Tengah credits
     ├── data/
