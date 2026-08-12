@@ -23,7 +23,7 @@ export const PARTICIPANTS: Participant[] = [
     songTitle: "Menghargai Kata Rindu",
     originalArtist: "Salma Salsabil",
     youtubeUrl: "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
-    imageUrl: "/Bapak RT 06.png",
+    imageUrl: "/Bapak RT 01.png",
     voteCount: 132450,
     category: "Finalist",
   },
