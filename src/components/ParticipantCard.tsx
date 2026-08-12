@@ -64,14 +64,6 @@ export const ParticipantCard: React.FC<ParticipantCardProps> = ({
             </div>
           </motion.div>
         </div>
-
-        {/* View Count Tag */}
-        {participant.views && (
-          <div className="absolute bottom-3 right-3 z-10 flex items-center gap-1 px-2.5 py-1 rounded-md bg-slate-900/90 text-red-400 text-xs font-bold border border-red-500/30">
-            <Youtube className="w-3.5 h-3.5 text-red-500" />
-            <span>{participant.views} Views</span>
-          </div>
-        )}
       </div>
 
       {/* Card Content Info */}

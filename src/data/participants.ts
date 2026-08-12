@@ -3,17 +3,16 @@ import { Participant } from "@/types/participant";
 export const PARTICIPANTS: Participant[] = [
   {
     id: "1",
-    name: "Salma Salsabil",
-    stageName: "Salma",
+    name: "Reza",
+    stageName: "Reza",
     origin: "RT 01",
     age: 21,
     songTitle: "Menghargai Kata Rindu",
-    originalArtist: "Salma Salsabil",
+    originalArtist: "Reza",
     youtubeUrl: "https://www.youtube.com/watch?v=0tWwQ0eZz5c",
-    imageUrl: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/reza.png",
     voteCount: 148920,
     category: "Finalist",
-    views: "2.4M",
   },
   {
     id: "2",
@@ -27,7 +26,6 @@ export const PARTICIPANTS: Participant[] = [
     imageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
     voteCount: 132450,
     category: "Finalist",
-    views: "1.9M",
   },
   {
     id: "3",
@@ -41,7 +39,6 @@ export const PARTICIPANTS: Participant[] = [
     imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
     voteCount: 98400,
     category: "Finalist",
-    views: "1.5M",
   },
   {
     id: "4",
@@ -55,7 +52,6 @@ export const PARTICIPANTS: Participant[] = [
     imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
     voteCount: 89310,
     category: "Finalist",
-    views: "1.2M",
   },
   {
     id: "5",
@@ -69,7 +65,6 @@ export const PARTICIPANTS: Participant[] = [
     imageUrl: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop",
     voteCount: 74200,
     category: "Finalist",
-    views: "890K",
   },
   {
     id: "6",
@@ -83,6 +78,5 @@ export const PARTICIPANTS: Participant[] = [
     imageUrl: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800&auto=format&fit=crop",
     voteCount: 112500,
     category: "Finalist",
-    views: "3.1M",
   },
 ];
