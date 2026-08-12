@@ -1,30 +1,25 @@
 # Kiblat Project - Indonesian Idol Voting System
 
 ## 1. Project Overview
-A luxurious, elegant, and premium landing page for an Indonesian Idol-themed voting system. The application features a dark midnight & blue stage curtain ambient theme (`curtain-bg`) matching Screenshot 2, with the centered **Sembilan Belas Idol** emblem logo, electric neon blue glowing spotlight halos, glassmorphic UI components, a Hero section with a prominent Google Form VOTE CTA button, and interactive Framer Motion participant cards linking to YouTube performances.
+A luxurious, elegant, and premium landing page for an Indonesian Idol-themed voting system. The application features a dark midnight & blue stage curtain ambient theme (`curtain-bg`) matching Screenshot 2, centered **Sembilan Belas Idol** emblem logo, header sponsor credit **"PRESENTED BY KARANG TARUNA RW 19"**, electric neon cyan glowing halos, and an **Ice Light Blue, Cyan & Metallic Silver** button palette with 0% yellow/gold.
 
 ## 2. Tech Stack
 - **Framework:** Next.js 15 (App Router, TypeScript)
-- **Styling:** Tailwind CSS + Custom Design System Tokens (Blue stage curtain background, Electric Neon Cyan glow, Gold accents)
+- **Styling:** Tailwind CSS + Custom Design System Tokens (Blue stage curtain background, Ice Cyan/Silver button palette)
 - **Animation:** Framer Motion
 - **Icons:** Lucide React
 - **Deployment:** Vercel (Repository: `meppani/19_Idol_Anteng`)
 
 ## 3. Current State
-- **Status:** 🚀 Redesign Hero Section Complete & Pushed to GitHub Repository (`meppani/19_Idol_Anteng`).
+- **Status:** 🚀 Button Palette Updated & Header Credit Added — Pushed to GitHub (`meppani/19_Idol_Anteng`).
 - **Completed Milestones:**
   - [x] Initialized Next.js project structure with TypeScript, Tailwind CSS, Framer Motion, and Lucide Icons.
-  - [x] Redesigned Hero Section matching Screenshot 2:
-    - Blue stage curtain backdrop (`curtain-bg` with dark vignette folds)
-    - Centered official logo image `Logo SembilanBelas Idol.png` (`public/logo.png`)
-    - Multi-layered electric neon blue glowing halo behind the logo (`neon-blue-glow-lg`)
-    - Clean white headline text: **"Dukung Idola Favoritmu Menuju Panggung Spektakuler"**
-    - Google Form VOTE button and YouTube performances link
-  - [x] Updated `Navbar.tsx` brand logo to match the official `Sembilan Belas Idol` logo.
-  - [x] Created contestant data model (`src/types/participant.ts`) and realistic contestant dataset with YouTube URLs (`src/data/participants.ts`).
-  - [x] Built `ParticipantCard.tsx` powered by **Framer Motion** (hover scale, glow box-shadow, shine line, YouTube redirect).
-  - [x] Built `ParticipantGrid.tsx` with live search and category filter tabs.
-  - [x] Built `Footer.tsx` with a step-by-step voting guide and official event links.
+  - [x] Added **"PRESENTED BY KARANG TARUNA RW 19"** text credit next to the header logo in `Navbar.tsx`.
+  - [x] Redesigned ALL buttons across the site to use **Ice Light Blue, Electric Cyan, and Metallic Silver** gradients (Removed 100% of yellow/gold colors from all buttons, tabs, and badges).
+  - [x] Redesigned Hero Section matching Screenshot 2 (blue stage curtain backdrop, Sembilan Belas Idol logo, neon blue glowing halo, clean white headline).
+  - [x] Built `ParticipantCard.tsx` powered by **Framer Motion** (ice cyan hover scale, glow box-shadow, shine line, YouTube redirect).
+  - [x] Built `ParticipantGrid.tsx` with live search and ice cyan category filter tabs.
+  - [x] Built `Footer.tsx` with a step-by-step voting guide and Karang Taruna RW 19 credits.
   - [x] Verified zero-error production build (`npx next build`).
   - [x] Pushed code to remote repository `meppani/19_Idol_Anteng` on branch `main`.
 
@@ -47,12 +42,12 @@ A luxurious, elegant, and premium landing page for an Indonesian Idol-themed vot
     │   ├── layout.tsx          # Root layout with Outfit & Plus Jakarta fonts
     │   └── page.tsx            # Main landing page composition
     ├── components/
-    │   ├── Navbar.tsx          # Sticky glass header with SembilanBelas Idol logo & VOTE button
-    │   ├── Hero.tsx            # Redesigned Stage Curtain Hero with neon blue glowing logo & CTA
-    │   ├── VoteButton.tsx      # Reusable multi-layered glowing CTA button
-    │   ├── ParticipantCard.tsx # Framer Motion hover scale & glow cards with YouTube links
-    │   ├── ParticipantGrid.tsx # Category filterable & searchable contestant grid
-    │   └── Footer.tsx          # Step-by-step voting guide & footer links
+    │   ├── Navbar.tsx          # Header with SembilanBelas Idol logo, Karang Taruna RW 19 credit & ice blue VOTE button
+    │   ├── Hero.tsx            # Stage Curtain Hero with neon blue glowing logo & ice cyan CTA buttons
+    │   ├── VoteButton.tsx      # Ice light blue / cyan / silver glowing CTA button (No yellow/gold)
+    │   ├── ParticipantCard.tsx # Framer Motion hover cards with ice cyan VOTE button & YouTube links
+    │   ├── ParticipantGrid.tsx # Ice cyan category filterable & searchable contestant grid
+    │   └── Footer.tsx          # Step-by-step voting guide & Karang Taruna RW 19 credits
     ├── data/
     │   └── participants.ts     # Idol contestants dataset with YouTube performance links
     └── types/

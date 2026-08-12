@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Participant } from "@/types/participant";
-import { Play, Youtube, Vote, MapPin, Music, Sparkles } from "lucide-react";
+import { Play, Youtube, Vote, MapPin, Music } from "lucide-react";
 
 interface ParticipantCardProps {
   participant: Participant;
@@ -53,16 +53,6 @@ export const ParticipantCard: React.FC<ParticipantCardProps> = ({
         {/* Dark Vignette Overlay Gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0b1129] via-slate-950/40 to-transparent" />
 
-        {/* Badge Overlay (Ice Cyan & Silver Tone) */}
-        {participant.badge && (
-          <div className="absolute top-3 left-3 z-10">
-            <span className="px-3 py-1.5 rounded-full bg-slate-950/85 border border-cyan-400/50 text-cyan-300 text-xs font-black shadow-lg backdrop-blur-md flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-              {participant.badge}
-            </span>
-          </div>
-        )}
-
         {/* YouTube Performance Play Button Overlay */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 bg-slate-950/40 backdrop-blur-[2px]">
           <motion.div
@@ -87,14 +77,11 @@ export const ParticipantCard: React.FC<ParticipantCardProps> = ({
       {/* Card Content Info */}
       <div className="p-5 flex-1 flex flex-col justify-between relative z-10 bg-[#0b1129]/90 backdrop-blur-md">
         <div>
-          {/* Origin & Stage Name */}
+          {/* Origin (RT 01 - RT 05) */}
           <div className="flex items-center justify-between text-xs text-slate-400 mb-1.5 font-semibold">
-            <span className="flex items-center gap-1 text-cyan-400">
+            <span className="flex items-center gap-1 text-cyan-400 font-bold">
               <MapPin className="w-3.5 h-3.5" />
               {participant.origin}
-            </span>
-            <span className="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">
-              {participant.category}
             </span>
           </div>
 
@@ -129,7 +116,7 @@ export const ParticipantCard: React.FC<ParticipantCardProps> = ({
             <span>Tonton Video</span>
           </button>
 
-          {/* Direct Vote Button (Ice Cyan & Silver Gradient - NO YELLOW) */}
+          {/* Direct Vote Button */}
           <button
             onClick={handleVoteClick}
             className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-gradient-to-r from-cyan-300 via-white to-sky-400 text-slate-950 font-black text-xs shadow-[0_0_15px_rgba(0,240,255,0.5)] hover:shadow-[0_0_25px_rgba(255,255,255,0.8)] transition-all duration-200 transform hover:scale-105"
