@@ -27,9 +27,10 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Sembilan Belas Idol Logo Branding */}
-          <a href="#" className="flex items-center gap-3 group">
-            <div className="relative w-36 sm:w-44 h-10 filter drop-shadow-[0_0_12px_rgba(0,240,255,0.6)]">
+          {/* Sembilan Belas Idol Logo Branding & Sponsor Credit */}
+          <a href="#" className="flex items-center gap-3.5 group">
+            {/* Logo Image */}
+            <div className="relative w-32 sm:w-40 h-10 filter drop-shadow-[0_0_12px_rgba(0,240,255,0.6)]">
               <Image
                 src="/logo.png"
                 alt="Sembilan Belas Idol Logo"
@@ -37,6 +38,16 @@ export const Navbar: React.FC = () => {
                 priority
                 className="object-contain object-left"
               />
+            </div>
+
+            {/* Presented By Credit Badge */}
+            <div className="flex flex-col justify-center border-l border-cyan-400/40 pl-3 py-0.5">
+              <span className="text-[9px] sm:text-[10px] font-bold tracking-widest text-slate-300 uppercase">
+                PRESENTED BY
+              </span>
+              <span className="text-xs sm:text-sm font-black tracking-wide text-cyan-300 group-hover:text-white transition-colors">
+                Karang Taruna RW 19
+              </span>
             </div>
           </a>
 
@@ -59,7 +70,7 @@ export const Navbar: React.FC = () => {
               href="#how-to-vote"
               className="text-sm font-medium text-slate-300 hover:text-cyan-300 transition-colors duration-200 flex items-center gap-1.5"
             >
-              <Sparkles className="w-4 h-4 text-amber-400" />
+              <Sparkles className="w-4 h-4 text-cyan-400" />
               Cara Vote
             </a>
           </nav>

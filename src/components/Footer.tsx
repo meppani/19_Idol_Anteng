@@ -1,20 +1,21 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { VoteButton } from "./VoteButton";
-import { Trophy, CheckCircle2, Send, ExternalLink, Heart } from "lucide-react";
+import { CheckCircle2, ExternalLink, Heart } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="relative bg-[#03040c] border-t border-amber-500/20 pt-16 pb-12 overflow-hidden text-slate-400">
+    <footer className="relative bg-[#020512] border-t border-cyan-500/20 pt-16 pb-12 overflow-hidden text-slate-400">
       
       {/* How To Vote Steps Banner */}
       <div id="how-to-vote" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-        <div className="glass-panel p-8 sm:p-12 rounded-3xl border border-amber-500/30 relative overflow-hidden">
+        <div className="glass-panel p-8 sm:p-12 rounded-3xl border border-cyan-500/30 relative overflow-hidden">
           
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div className="flex flex-col items-center md:items-start gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-400/50 flex items-center justify-center text-amber-300 font-black text-xl">
+              <div className="w-12 h-12 rounded-2xl bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-cyan-300 font-black text-xl">
                 1
               </div>
               <h4 className="text-white font-extrabold text-lg">Pilih Idola & Video</h4>
@@ -24,7 +25,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <div className="flex flex-col items-center md:items-start gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-cyan-300 font-black text-xl">
+              <div className="w-12 h-12 rounded-2xl bg-sky-500/20 border border-sky-400/50 flex items-center justify-center text-sky-300 font-black text-xl">
                 2
               </div>
               <h4 className="text-white font-extrabold text-lg">Klik Tombol VOTE</h4>
@@ -59,20 +60,20 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-900">
           
-          {/* Col 1: Brand */}
+          {/* Col 1: Brand & Credit */}
           <div className="md:col-span-2 flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-amber-400 to-cyan-400 p-0.5">
-                <div className="w-full h-full bg-slate-950 rounded-full flex items-center justify-center">
-                  <Trophy className="w-4 h-4 text-amber-400" />
-                </div>
+              <div className="relative w-36 h-10 filter drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]">
+                <Image
+                  src="/logo.png"
+                  alt="Sembilan Belas Idol Logo"
+                  fill
+                  className="object-contain object-left"
+                />
               </div>
-              <span className="font-extrabold text-xl tracking-wider text-gold-gradient uppercase">
-                INDONESIAN IDOL
-              </span>
             </div>
             <p className="text-xs text-slate-400 max-w-md leading-relaxed">
-              Portal Voting Resmi Indonesian Idol. Hadir untuk memberikan ruang apresiasi bagi talenta-talenta terbaik bangsa menuju panggung spektakuler Indonesia.
+              Portal Voting Resmi Sembilan Belas Idol — Presented by Karang Taruna RW 19. Hadir untuk memberikan ruang apresiasi bagi talenta-talenta terbaik menuju panggung spektakuler.
             </p>
           </div>
 
@@ -83,17 +84,17 @@ export const Footer: React.FC = () => {
             </h5>
             <ul className="flex flex-col gap-2.5 text-xs">
               <li>
-                <a href="#hero" className="hover:text-amber-400 transition-colors">
+                <a href="#hero" className="hover:text-cyan-400 transition-colors">
                   Beranda
                 </a>
               </li>
               <li>
-                <a href="#participants" className="hover:text-amber-400 transition-colors">
+                <a href="#participants" className="hover:text-cyan-400 transition-colors">
                   Daftar Peserta Idol
                 </a>
               </li>
               <li>
-                <a href="#how-to-vote" className="hover:text-amber-400 transition-colors">
+                <a href="#how-to-vote" className="hover:text-cyan-400 transition-colors">
                   Panduan Voting Google Form
                 </a>
               </li>
@@ -124,7 +125,7 @@ export const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className="hover:text-red-400 transition-colors flex items-center gap-1"
                 >
-                  <span>Official YouTube Idol</span>
+                  <span>Official YouTube</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
@@ -134,9 +135,9 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} Indonesian Idol Voting System. Built with Next.js, Tailwind & Framer Motion.</p>
+          <p>© {new Date().getFullYear()} Sembilan Belas Idol — Karang Taruna RW 19. All rights reserved.</p>
           <p className="flex items-center gap-1">
-            Made with <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500" /> for Indonesian Idol Fans
+            Made with <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500" /> for Sembilan Belas Idol Fans
           </p>
         </div>
       </div>
