@@ -9,7 +9,7 @@ import { PlayCircle, Sparkles } from "lucide-react";
 export const Hero: React.FC = () => {
   return (
     <section id="hero" className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden curtain-bg min-h-[90vh] flex items-center justify-center">
-      
+
       {/* Dark Vignette Curtain Overlay */}
       <div className="curtain-vignette" />
 
@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_40%,#000_70%,transparent_100%)] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 flex flex-col items-center justify-center">
-        
+
         {/* Sembilan Belas Idol Logo & Electric Neon Blue Glow Centerpiece */}
         <motion.div
           initial={{ opacity: 0, scale: 0.85 }}
@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="mt-4 text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto font-medium"
         >
-          Suaramu menentukan masa depan calon bintang musik Indonesia. Tonton penampilan terbaik di YouTube dan berikan dukungannmu melalui formulir voting resmi.
+          Suaramu menentukan masa depan calon bintang musik RW 19 Antapani Tengah. Tonton penampilan terbaik di YouTube dan berikan dukungannmu melalui formulir voting resmi.
         </motion.p>
 
         {/* Action CTA Buttons */}
