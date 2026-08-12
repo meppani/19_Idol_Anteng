@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Vote, ExternalLink, Sparkles } from "lucide-react";
+import { Vote, Sparkles } from "lucide-react";
 
 interface VoteButtonProps {
   formUrl?: string;
@@ -48,8 +48,6 @@ export const VoteButton: React.FC<VoteButtonProps> = ({
         </span>
 
         <Sparkles className="w-4 h-4 text-slate-900 animate-spin-slow opacity-80" />
-
-        <ExternalLink className="w-4 h-4 ml-1 text-slate-950 opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all duration-300" />
       </span>
     </motion.a>
   );
