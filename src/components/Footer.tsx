@@ -109,7 +109,7 @@ export const Footer: React.FC = () => {
             <ul className="flex flex-col gap-2.5 text-xs">
               <li>
                 <a
-                  href="https://forms.google.com"
+                  href="https://forms.gle/LXouTfTbTQ1g6saq5"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-cyan-400 transition-colors flex items-center gap-1"

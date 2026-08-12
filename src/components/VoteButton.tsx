@@ -12,7 +12,7 @@ interface VoteButtonProps {
 }
 
 export const VoteButton: React.FC<VoteButtonProps> = ({
-  formUrl = "https://forms.google.com",
+  formUrl = "https://forms.gle/LXouTfTbTQ1g6saq5",
   size = "lg",
   className = "",
   label = "VOTE NOW",

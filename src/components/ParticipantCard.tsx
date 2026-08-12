@@ -13,7 +13,7 @@ interface ParticipantCardProps {
 
 export const ParticipantCard: React.FC<ParticipantCardProps> = ({
   participant,
-  googleFormUrl = "https://forms.google.com",
+  googleFormUrl = "https://forms.gle/LXouTfTbTQ1g6saq5",
 }) => {
   const handleCardClick = (e: React.MouseEvent) => {
     window.open(participant.youtubeUrl, "_blank", "noopener,noreferrer");
