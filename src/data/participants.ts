@@ -251,7 +251,7 @@ export const PARTICIPANTS: Participant[] = [
   {
     id: "20",
     name: "Dani Search",
-    stageName: "Dani",
+    stageName: "Dani Search",
     origin: "RT 02",
     age: 20,
     songTitle: "---",
