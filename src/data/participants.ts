@@ -308,7 +308,7 @@ export const PARTICIPANTS: Participant[] = [
     age: 20,
     songTitle: "---",
     originalArtist: "---",
-    youtubeUrl: "https://www.youtube.com/watch?v=hAEfi_SKTEU",
+    youtubeUrl: "https://youtube.com/shorts/5N34X_T5c9w",
     imageUrl: "/Pak Ian.png",
     voteCount: 22000,
     category: "Finalist",
